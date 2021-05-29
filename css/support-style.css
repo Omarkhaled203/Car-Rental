@@ -1,0 +1,156 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.main-cont {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(125deg,#ffc107,#ff8f00);
+    color: rgba(0,0,0,.87);
+    padding: 7.5% 4%;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.main-cont .cont {
+    margin-left: 5%;
+    box-shadow: 3px 5px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.main-cont .left,
+.main-cont .right {
+    padding: 60px 110px;
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    max-width: 50%;
+    background-color: #606060;
+    color: #FFF;
+}
+
+.main-cont .left .top-sect {
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    max-height: 100%;
+    place-content: center flex-start;
+}
+
+.main-cont .left .top-sect img {
+    height: 40px;
+    padding-right: 5px;
+}
+
+.main-cont .left .top-sect h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #FFF;
+    font: 400 24px/32px Roboto,"Helvetica Neue",sans-serif;
+    margin: 0 0 16px;
+    font-weight: lighter;
+}
+
+.main-cont .left .bott-sect a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.main-cont .left .last-sect {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #FFC107;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.main-cont .left .last-sect a {
+    color: #000;
+}
+
+/* Start Right Section */
+
+.main-cont .right {
+    background-color: #FFF;
+    color: #000;
+}
+
+.main-cont .right input {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgb(165, 165, 165);
+    margin-bottom: 30px;
+}
+
+.main-cont .right #check {
+    margin: -22px 0 -10px 0;
+    width: 20px;
+    height: 20px;
+}
+
+.main-cont .right input:active,
+.main-cont .right input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.main-cont .right input::placeholder {
+    color: rgb(165, 165, 165);
+}
+
+.main-cont .right label {
+    margin: 0 0 0 -195px;
+}
+
+.main-cont .right .tak-action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.main-cont .right .tak-action a.log {
+    border-radius: 3px;
+    background-color: #616161;
+    padding: 10px 50px;
+    color: #FFF;
+    margin-right: 20px;
+    box-shadow: 1px 3px 5px -1px rgb(0 0 0 / 40%);
+}
+
+.main-cont .right .tak-action a.forg {
+    color: #424242;
+    padding: 10px 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.main-cont .right .tak-action a.forg:hover {
+    border-radius: 3px;
+    background-color: #e6e6e6;
+}
+
+.main-cont .right .last-sect {
+    background-color: #81B441;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 13px;
+    cursor: pointer;
+    box-shadow: 1px 5px 10px -2px rgba(0, 0, 0, 0.4);
+}
+
+.main-cont .right .last-sect a {
+    color: #fff;
+    font-weight: 600;
+}
